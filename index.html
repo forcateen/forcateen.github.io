@@ -4,27 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ForTeen</title>
-<meta name="theme-color" content="#0a12a8">
+<meta name="theme-color" content="#0b0b0b">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/svg+xml" href="logo.svg">
-<link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1h2ulcXqJMc0QrQW3UTh_elSOpYbUGRVc">
+<link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1nSdb9ZpMKVBccjFBEMVh1_FsQg3gsh2u">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="ForTeen">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <style>
-  html, body { margin: 0; height: 100%; background: #0d1ed4; font-family: system-ui, -apple-system, sans-serif; }
+  html, body { margin: 0; height: 100%; background: #0b0b0b; font-family: system-ui, -apple-system, sans-serif; }
   .splash {
     position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
     color: #fff; text-align: center; padding: 24px;
-    background: radial-gradient(rgba(255,255,255,.08) 1.2px, transparent 1.5px) 0 0 / 7px 7px, linear-gradient(160deg, #1a33f0, #0716a0);
+    background: radial-gradient(rgba(255,255,255,.05) 1.2px, transparent 1.5px) 0 0 / 7px 7px, linear-gradient(160deg, #222222, #050505);
   }
-  .splash img { width: 140px; height: 140px; filter: drop-shadow(0 0 18px rgba(107,229,46,.6)); animation: pulsa 1.2s ease-in-out infinite; }
+  .splash img { width: 140px; height: 140px; filter: drop-shadow(0 0 18px rgba(107,229,46,.5)); border-radius: 32px; animation: pulsa 1.2s ease-in-out infinite; }
   .splash b { font-size: 36px; letter-spacing: .02em; }
   .splash small { opacity: .8; font-size: 15px; }
   @keyframes pulsa { 50% { transform: scale(1.06); } }
   #erro { display: none; max-width: 300px; line-height: 1.4; }
-  #erro button { margin-top: 12px; border: 0; border-radius: 12px; padding: 12px 18px; font-weight: 800; font-size: 16px; background: #6be52e; color: #07108c; }
+  #erro button { margin-top: 12px; border: 0; border-radius: 12px; padding: 12px 18px; font-weight: 800; font-size: 16px; background: #6be52e; color: #0b0b0b; }
 </style>
 </head>
 <body>
@@ -52,11 +52,11 @@
       '<script>window.WEGO_API=' + JSON.stringify(API) + ';' +
       'if("serviceWorker" in navigator){navigator.serviceWorker.register("sw.js").catch(function(){});}' +
       (atualizarDepois
-        ? 'setTimeout(function(){fetch(WEGO_API,{method:"POST",body:JSON.stringify({fn:"pagina",args:[]})}).then(function(r){return r.json();}).then(function(j){if(j.ok){try{localStorage.setItem("' + CHAVE + '",j.r);}catch(e){}}}).catch(function(){});},5000);'
+        ? 'setTimeout(function(){fetch(WEGO_API,{method:"POST",body:JSON.stringify({fn:"pagina",args:[]})}).then(function(r){return r.json();}).then(function(j){if(j.ok){var velho=null;try{velho=localStorage.getItem("' + CHAVE + '");}catch(e){}try{localStorage.setItem("' + CHAVE + '",j.r);}catch(e){}if(velho&&velho!==j.r){var b=document.createElement("button");b.textContent="\u2728 Tem novidade no ForTeen! Toque pra atualizar";b.style.cssText="position:fixed;left:50%;bottom:86px;transform:translateX(-50%);z-index:2147483000;border:0;border-radius:30px;padding:13px 20px;font:800 15px system-ui,sans-serif;color:#111;background:#ffd23f;box-shadow:0 8px 24px rgba(0,0,0,.3);max-width:92vw;cursor:pointer";b.onclick=function(){location.reload();};document.body.appendChild(b);}}}).catch(function(){});},5000);'
         : '') +
       '<\/script>' +
       '<link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0a12a8">' +
-      '<link rel="icon" type="image/svg+xml" href="logo.svg"><link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1h2ulcXqJMc0QrQW3UTh_elSOpYbUGRVc">' +
+      '<link rel="icon" type="image/svg+xml" href="logo.svg"><link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1nSdb9ZpMKVBccjFBEMVh1_FsQg3gsh2u">' +
       '<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">' +
       '<meta name="apple-mobile-web-app-title" content="ForTeen">';
     html = html.replace('<base target="_top">', '').replace('<head>', '<head>' + extra);
