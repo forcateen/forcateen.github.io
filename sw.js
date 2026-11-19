@@ -1,10 +1,10 @@
 // Guarda os arquivos do app no celular pra ele abrir na hora, até com internet fraca.
 // E recebe as notificações do ForTeen, mesmo com o app fechado.
-const CACHE = 'forteen-v5';
+const CACHE = 'forteen-v6';
 const ARQUIVOS = ['./', 'index.html', 'manifest.json', 'logo.svg'];
 const API = 'https://script.google.com/macros/s/AKfycby_w7m1eiD_gHxD5GV0OdPoOHP89R3KsM2xwqJN1mObH53_ihz47rF3HHNzGU-VjoI6/exec';
-const ICONE = 'https://lh3.googleusercontent.com/d/1lnS4VsJdVupaTx3nQoOf4H-my0A6cQdL';
-const SELO = 'https://lh3.googleusercontent.com/d/1ePvfmIcqrQWD6Mnjn0gGxQcsQj8ow6ug';
+const ICONE = 'https://lh3.googleusercontent.com/d/1ZBHRwDtX4Esr4l0CyAeLF2S7L_Odm-S9';
+const SELO = 'https://lh3.googleusercontent.com/d/1_KYKSslmI4lUPkBXZr6bj8KumH_n7_MQ';
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ARQUIVOS)));
