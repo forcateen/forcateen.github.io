@@ -7,23 +7,23 @@
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#0d1ed4",
-  "theme_color": "#0a12a8",
+  "background_color": "#0b0b0b",
+  "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "https://lh3.googleusercontent.com/d/1lnS4VsJdVupaTx3nQoOf4H-my0A6cQdL",
+      "src": "https://lh3.googleusercontent.com/d/1ZBHRwDtX4Esr4l0CyAeLF2S7L_Odm-S9",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://lh3.googleusercontent.com/d/1h2ulcXqJMc0QrQW3UTh_elSOpYbUGRVc",
+      "src": "https://lh3.googleusercontent.com/d/1UqfeP2GTqfaeu-cD-m64w1cNwXtRkh3a",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://lh3.googleusercontent.com/d/1FWRTRDHiK0Vm_Qf8NbnidL6RVBiF41ky",
+      "src": "https://lh3.googleusercontent.com/d/1q6jFS4m7xhnzYtZ9umA67bU2mdR5cWTk",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -37,7 +37,7 @@
       "url": "./?aba=placar",
       "icons": [
         {
-          "src": "https://lh3.googleusercontent.com/d/1lnS4VsJdVupaTx3nQoOf4H-my0A6cQdL",
+          "src": "https://lh3.googleusercontent.com/d/1ZBHRwDtX4Esr4l0CyAeLF2S7L_Odm-S9",
           "sizes": "192x192",
           "type": "image/png"
         }
@@ -50,7 +50,7 @@
       "url": "./?aba=hoje",
       "icons": [
         {
-          "src": "https://lh3.googleusercontent.com/d/1lnS4VsJdVupaTx3nQoOf4H-my0A6cQdL",
+          "src": "https://lh3.googleusercontent.com/d/1ZBHRwDtX4Esr4l0CyAeLF2S7L_Odm-S9",
           "sizes": "192x192",
           "type": "image/png"
         }
@@ -62,7 +62,7 @@
       "url": "./?aba=mural",
       "icons": [
         {
-          "src": "https://lh3.googleusercontent.com/d/1lnS4VsJdVupaTx3nQoOf4H-my0A6cQdL",
+          "src": "https://lh3.googleusercontent.com/d/1ZBHRwDtX4Esr4l0CyAeLF2S7L_Odm-S9",
           "sizes": "192x192",
           "type": "image/png"
         }
