@@ -70,7 +70,10 @@
 
   if (salvo) {
     // Abre na hora com a versão guardada no celular e atualiza por trás pra próxima vez.
-    montar(salvo, true);
+    // Espera a página terminar de carregar pra trocar a tela inteira (senão a tela de "Carregando" fica por baixo).
+    var abrirSalvo = function () { montar(salvo, true); };
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', abrirSalvo);
+    else abrirSalvo();
   } else {
     buscar().then(function (html) { montar(html, false); }).catch(function () {
       document.getElementById('msg').style.display = 'none';
