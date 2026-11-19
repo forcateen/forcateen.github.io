@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>WeGo ⚡ Força Teen</title>
+<title>ForTeen</title>
 <meta name="theme-color" content="#0a12a8">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/svg+xml" href="logo.svg">
 <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1h2ulcXqJMc0QrQW3UTh_elSOpYbUGRVc">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="WeGo">
+<meta name="apple-mobile-web-app-title" content="ForTeen">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <style>
   html, body { margin: 0; height: 100%; background: #0d1ed4; font-family: system-ui, -apple-system, sans-serif; }
@@ -30,12 +30,12 @@
 <body>
 <div class="splash">
   <img src="logo.svg" alt="">
-  <b>WeGo</b>
+  <b>ForTeen</b>
   <small id="msg">Carregando...</small>
   <div id="erro">Não deu pra conectar agora. Confere a internet e tenta de novo.<br><button onclick="location.reload()">Tentar de novo</button></div>
 </div>
 <script>
-  // O "salão" do WeGo: esta página abre na hora e busca a tela do app na "cozinha" (Google Apps Script).
+  // O "salão" do ForTeen: esta página abre na hora e busca a tela do app na "cozinha" (Google Apps Script).
   var API = 'https://script.google.com/macros/s/AKfycby_w7m1eiD_gHxD5GV0OdPoOHP89R3KsM2xwqJN1mObH53_ihz47rF3HHNzGU-VjoI6/exec';
   var CHAVE = 'wego_pagina';
 
@@ -58,7 +58,7 @@
       '<link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0a12a8">' +
       '<link rel="icon" type="image/svg+xml" href="logo.svg"><link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1h2ulcXqJMc0QrQW3UTh_elSOpYbUGRVc">' +
       '<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">' +
-      '<meta name="apple-mobile-web-app-title" content="WeGo">';
+      '<meta name="apple-mobile-web-app-title" content="ForTeen">';
     html = html.replace('<base target="_top">', '').replace('<head>', '<head>' + extra);
     document.open();
     document.write(html);
