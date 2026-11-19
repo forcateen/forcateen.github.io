@@ -1,6 +1,6 @@
 {
-  "name": "WeGo ⚡ Força Teen",
-  "short_name": "WeGo",
+  "name": "ForTeen",
+  "short_name": "ForTeen",
   "description": "Gincana, mural e chat do grupo Força Teen.",
   "lang": "pt-BR",
   "start_url": "./",
@@ -27,6 +27,46 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Placar",
+      "short_name": "Placar",
+      "description": "Ver o placar das equipes",
+      "url": "./?aba=placar",
+      "icons": [
+        {
+          "src": "https://lh3.googleusercontent.com/d/1lnS4VsJdVupaTx3nQoOf4H-my0A6cQdL",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Desafio de hoje",
+      "short_name": "Desafio",
+      "description": "Ver o desafio de hoje",
+      "url": "./?aba=hoje",
+      "icons": [
+        {
+          "src": "https://lh3.googleusercontent.com/d/1lnS4VsJdVupaTx3nQoOf4H-my0A6cQdL",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Mural",
+      "short_name": "Mural",
+      "url": "./?aba=mural",
+      "icons": [
+        {
+          "src": "https://lh3.googleusercontent.com/d/1lnS4VsJdVupaTx3nQoOf4H-my0A6cQdL",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     }
   ]
 }
