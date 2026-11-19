@@ -1,5 +1,5 @@
 // Guarda os arquivos do app no celular pra ele abrir na hora, até com internet fraca.
-const CACHE = 'wego-v2';
+const CACHE = 'wego-v3';
 const ARQUIVOS = ['./', 'index.html', 'manifest.json', 'logo.svg'];
 
 self.addEventListener('install', (e) => {
