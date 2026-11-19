@@ -1,9 +1,10 @@
 // Guarda os arquivos do app no celular pra ele abrir na hora, até com internet fraca.
-// E recebe as notificações do WeGo, mesmo com o app fechado.
-const CACHE = 'wego-v4';
+// E recebe as notificações do ForTeen, mesmo com o app fechado.
+const CACHE = 'forteen-v5';
 const ARQUIVOS = ['./', 'index.html', 'manifest.json', 'logo.svg'];
 const API = 'https://script.google.com/macros/s/AKfycby_w7m1eiD_gHxD5GV0OdPoOHP89R3KsM2xwqJN1mObH53_ihz47rF3HHNzGU-VjoI6/exec';
 const ICONE = 'https://lh3.googleusercontent.com/d/1lnS4VsJdVupaTx3nQoOf4H-my0A6cQdL';
+const SELO = 'https://lh3.googleusercontent.com/d/1ePvfmIcqrQWD6Mnjn0gGxQcsQj8ow6ug';
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ARQUIVOS)));
@@ -32,7 +33,7 @@ self.addEventListener('fetch', (e) => {
   );
 });
 
-// Chegou um aviso: pergunta pro WeGo qual é a mensagem e mostra a notificação.
+// Chegou um aviso: pergunta pro ForTeen qual é a mensagem e mostra a notificação.
 self.addEventListener('push', (e) => {
   e.waitUntil(
     self.registration.pushManager.getSubscription()
@@ -40,10 +41,10 @@ self.addEventListener('push', (e) => {
       .then((r) => r.json())
       .then((j) => (j && j.ok ? j.r : null))
       .catch(() => null)
-      .then((m) => self.registration.showNotification((m && m.titulo) || 'WeGo ⚡', {
-        body: (m && m.texto) || 'Tem novidade no WeGo!',
+      .then((m) => self.registration.showNotification((m && m.titulo) || 'ForTeen ⚡', {
+        body: (m && m.texto) || 'Tem novidade no ForTeen!',
         icon: ICONE,
-        badge: ICONE,
+        badge: SELO,
         tag: 'wego-' + ((m && m.ts) || Date.now()),
         vibrate: [120, 60, 120],
         data: { url: './' }
@@ -51,7 +52,7 @@ self.addEventListener('push', (e) => {
   );
 });
 
-// Tocou na notificação: abre o WeGo (ou traz pra frente se já estiver aberto).
+// Tocou na notificação: abre o ForTeen (ou traz pra frente se já estiver aberto).
 self.addEventListener('notificationclick', (e) => {
   e.notification.close();
   e.waitUntil(
