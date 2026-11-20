@@ -1,6 +1,6 @@
 // Guarda os arquivos do app no celular pra ele abrir na hora, até com internet fraca.
-// E recebe as notificações do ForTeen, mesmo com o app fechado.
-const CACHE = 'forteen-v8';
+// E recebe as notificações do Força Teen, mesmo com o app fechado.
+const CACHE = 'forteen-v9';
 const ARQUIVOS = ['./', 'index.html', 'manifest.json', 'logo.svg'];
 const API = 'https://script.google.com/macros/s/AKfycby_w7m1eiD_gHxD5GV0OdPoOHP89R3KsM2xwqJN1mObH53_ihz47rF3HHNzGU-VjoI6/exec';
 const ICONE = 'https://lh3.googleusercontent.com/d/1nL_BWieThlbpY-YCyEgXyW2W0kLHZixM';
@@ -33,7 +33,7 @@ self.addEventListener('fetch', (e) => {
   );
 });
 
-// Chegou um aviso: pergunta pro ForTeen qual é a mensagem e mostra a notificação.
+// Chegou um aviso: pergunta pro Força Teen qual é a mensagem e mostra a notificação.
 self.addEventListener('push', (e) => {
   e.waitUntil(
     self.registration.pushManager.getSubscription()
@@ -41,8 +41,8 @@ self.addEventListener('push', (e) => {
       .then((r) => r.json())
       .then((j) => (j && j.ok ? j.r : null))
       .catch(() => null)
-      .then((m) => self.registration.showNotification((m && m.titulo) || 'ForTeen ⚡', {
-        body: (m && m.texto) || 'Tem novidade no ForTeen!',
+      .then((m) => self.registration.showNotification((m && m.titulo) || 'Força Teen ⚡', {
+        body: (m && m.texto) || 'Tem novidade no Força Teen!',
         icon: ICONE,
         badge: SELO,
         tag: 'wego-' + ((m && m.ts) || Date.now()),
@@ -52,7 +52,7 @@ self.addEventListener('push', (e) => {
   );
 });
 
-// Tocou na notificação: abre o ForTeen (ou traz pra frente se já estiver aberto).
+// Tocou na notificação: abre o Força Teen (ou traz pra frente se já estiver aberto).
 self.addEventListener('notificationclick', (e) => {
   e.notification.close();
   e.waitUntil(
