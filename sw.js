@@ -1,9 +1,9 @@
 // Guarda os arquivos do app no celular pra ele abrir na hora, até com internet fraca.
 // E recebe as notificações do Força Teen, mesmo com o app fechado.
-const CACHE = 'forteen-v9';
+const CACHE = 'forteen-v10';
 const ARQUIVOS = ['./', 'index.html', 'manifest.json', 'logo.svg'];
 const API = 'https://script.google.com/macros/s/AKfycby_w7m1eiD_gHxD5GV0OdPoOHP89R3KsM2xwqJN1mObH53_ihz47rF3HHNzGU-VjoI6/exec';
-const ICONE = 'https://lh3.googleusercontent.com/d/1nL_BWieThlbpY-YCyEgXyW2W0kLHZixM';
+const ICONE = 'https://lh3.googleusercontent.com/d/1hAwCKsE-3rU0ytcpxge7nAXP8Ss7od_K';
 const SELO = 'https://lh3.googleusercontent.com/d/1a2AaRThMMyd_vY-u2EAn-lMWjncwXzXG';
 
 self.addEventListener('install', (e) => {
