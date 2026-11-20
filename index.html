@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>ForTeen</title>
+<title>Força Teen</title>
 <meta name="theme-color" content="#0b0b0b">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/svg+xml" href="logo.svg">
 <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1nL_BWieThlbpY-YCyEgXyW2W0kLHZixM">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="ForTeen">
+<meta name="apple-mobile-web-app-title" content="Força Teen">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <style>
   html, body { margin: 0; height: 100%; background: #0b0b0b; font-family: system-ui, -apple-system, sans-serif; }
@@ -37,13 +37,13 @@
 <body>
 <div class="splash">
   <svg class="marca" viewBox="-4 -4 108 108" aria-hidden="true"><defs><linearGradient id="vv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9dff5c"/><stop offset=".5" stop-color="#5fe022"/><stop offset="1" stop-color="#2fae10"/></linearGradient></defs><g class="bv"><g><path d="M68.1 9.9A44 44 0 0 0 19.4 81.7L42 49L19 35Z" fill="none" class="tr" stroke="#185e08" stroke-width="10"/><path d="M68.1 9.9A44 44 0 0 0 19.4 81.7L42 49L19 35Z" fill="none" class="tr" stroke="url(#vv)" stroke-width="7"/><path d="M68.1 9.9A44 44 0 0 0 19.4 81.7L42 49L19 35Z" fill="none" class="tr" stroke="#d9ffb8" stroke-width="1.6" stroke-opacity=".75"/></g><g transform="rotate(180 50 50)"><path d="M68.1 9.9A44 44 0 0 0 19.4 81.7L42 49L19 35Z" fill="none" class="tr" stroke="#185e08" stroke-width="10"/><path d="M68.1 9.9A44 44 0 0 0 19.4 81.7L42 49L19 35Z" fill="none" class="tr" stroke="url(#vv)" stroke-width="7"/><path d="M68.1 9.9A44 44 0 0 0 19.4 81.7L42 49L19 35Z" fill="none" class="tr" stroke="#d9ffb8" stroke-width="1.6" stroke-opacity=".75"/></g></g></svg>
-  <b>ForTeen</b>
+  <b>Força Teen</b>
   <div class="barra" id="barra"><i></i></div>
   <small id="msg">Carregando...</small>
   <div id="erro">Não deu pra conectar agora. Confere a internet e tenta de novo.<br><button onclick="location.reload()">Tentar de novo</button></div>
 </div>
 <script>
-  // O "salão" do ForTeen: esta página abre na hora e busca a tela do app na "cozinha" (Google Apps Script).
+  // O "salão" do Força Teen: esta página abre na hora e busca a tela do app na "cozinha" (Google Apps Script).
   var API = 'https://script.google.com/macros/s/AKfycby_w7m1eiD_gHxD5GV0OdPoOHP89R3KsM2xwqJN1mObH53_ihz47rF3HHNzGU-VjoI6/exec';
   var CHAVE = 'wego_pagina';
 
@@ -60,13 +60,13 @@
       '<script>window.WEGO_API=' + JSON.stringify(API) + ';' +
       'if("serviceWorker" in navigator){navigator.serviceWorker.register("sw.js").catch(function(){});}' +
       (atualizarDepois
-        ? 'setTimeout(function(){fetch(WEGO_API,{method:"POST",body:JSON.stringify({fn:"pagina",args:[]})}).then(function(r){return r.json();}).then(function(j){if(j.ok){var velho=null;try{velho=localStorage.getItem("' + CHAVE + '");}catch(e){}try{localStorage.setItem("' + CHAVE + '",j.r);}catch(e){}if(velho&&velho!==j.r){var b=document.createElement("button");b.textContent="\u2728 Tem novidade no ForTeen! Toque pra atualizar";b.style.cssText="position:fixed;left:50%;bottom:86px;transform:translateX(-50%);z-index:2147483000;border:0;border-radius:30px;padding:13px 20px;font:800 15px system-ui,sans-serif;color:#111;background:#ffd23f;box-shadow:0 8px 24px rgba(0,0,0,.3);max-width:92vw;cursor:pointer";b.onclick=function(){location.reload();};document.body.appendChild(b);}}}).catch(function(){});},5000);'
+        ? 'setTimeout(function(){fetch(WEGO_API,{method:"POST",body:JSON.stringify({fn:"pagina",args:[]})}).then(function(r){return r.json();}).then(function(j){if(j.ok){var velho=null;try{velho=localStorage.getItem("' + CHAVE + '");}catch(e){}try{localStorage.setItem("' + CHAVE + '",j.r);}catch(e){}if(velho&&velho!==j.r){var b=document.createElement("button");b.textContent="\u2728 Tem novidade no Força Teen! Toque pra atualizar";b.style.cssText="position:fixed;left:50%;bottom:86px;transform:translateX(-50%);z-index:2147483000;border:0;border-radius:30px;padding:13px 20px;font:800 15px system-ui,sans-serif;color:#111;background:#ffd23f;box-shadow:0 8px 24px rgba(0,0,0,.3);max-width:92vw;cursor:pointer";b.onclick=function(){location.reload();};document.body.appendChild(b);}}}).catch(function(){});},5000);'
         : '') +
       '<\/script>' +
       '<link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0a12a8">' +
       '<link rel="icon" type="image/svg+xml" href="logo.svg"><link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1nL_BWieThlbpY-YCyEgXyW2W0kLHZixM">' +
       '<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">' +
-      '<meta name="apple-mobile-web-app-title" content="ForTeen">';
+      '<meta name="apple-mobile-web-app-title" content="Força Teen">';
     html = html.replace('<base target="_top">', '').replace('<head>', '<head>' + extra);
     document.open();
     document.write(html);
