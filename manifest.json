@@ -11,19 +11,19 @@
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "https://lh3.googleusercontent.com/d/1ZBHRwDtX4Esr4l0CyAeLF2S7L_Odm-S9",
+      "src": "https://lh3.googleusercontent.com/d/1laQBT1eRewPST06qVlpWaT8m4SK_U440",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://lh3.googleusercontent.com/d/1UqfeP2GTqfaeu-cD-m64w1cNwXtRkh3a",
+      "src": "https://lh3.googleusercontent.com/d/1GszlxPKQ4-kSDZKlMo46XOq-K3NU4Wds",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://lh3.googleusercontent.com/d/1q6jFS4m7xhnzYtZ9umA67bU2mdR5cWTk",
+      "src": "https://lh3.googleusercontent.com/d/1yMLPUgn8emcL8xOBvcRsY7-Y1E9FkYzT",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -37,7 +37,7 @@
       "url": "./?aba=placar",
       "icons": [
         {
-          "src": "https://lh3.googleusercontent.com/d/1ZBHRwDtX4Esr4l0CyAeLF2S7L_Odm-S9",
+          "src": "https://lh3.googleusercontent.com/d/1laQBT1eRewPST06qVlpWaT8m4SK_U440",
           "sizes": "192x192",
           "type": "image/png"
         }
@@ -50,19 +50,19 @@
       "url": "./?aba=hoje",
       "icons": [
         {
-          "src": "https://lh3.googleusercontent.com/d/1ZBHRwDtX4Esr4l0CyAeLF2S7L_Odm-S9",
+          "src": "https://lh3.googleusercontent.com/d/1laQBT1eRewPST06qVlpWaT8m4SK_U440",
           "sizes": "192x192",
           "type": "image/png"
         }
       ]
     },
     {
-      "name": "Mural",
-      "short_name": "Mural",
+      "name": "Feed",
+      "short_name": "Feed",
       "url": "./?aba=mural",
       "icons": [
         {
-          "src": "https://lh3.googleusercontent.com/d/1ZBHRwDtX4Esr4l0CyAeLF2S7L_Odm-S9",
+          "src": "https://lh3.googleusercontent.com/d/1laQBT1eRewPST06qVlpWaT8m4SK_U440",
           "sizes": "192x192",
           "type": "image/png"
         }
